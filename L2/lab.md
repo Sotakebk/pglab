@@ -220,9 +220,11 @@ Warto również zwrócić uwagę na tzw. 'warstwy' ([dokumentacja](https://docs.
 https://github.com/user-attachments/assets/74734a8f-3dc3-4401-b29d-21e17cbe53af
 
 konfiguracja triggera:
+
 ![konfiguracja triggera](./media/trigger-config.png)
 
 konfiguracja kolidera:
+
 ![konfiguracja kolidera](./media/collider-config.png)
 
 kod:
