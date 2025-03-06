@@ -65,23 +65,23 @@ W celu wykorzystania sprite'ów do animacji, może być potrzebne ręczne podzie
 
 W tym celu należy otworzyć okienko `Sprite Editor`, dostępne poprzez rozwijane menu u góry: `Window -> 2D -> Sprite Editor`
 
-![otwieranie przez menu](./media/open-sprite-editor.webm)
+![otwieranie przez menu](./media/open-sprite-editor.mp4)
 
 Po wybraniu odpowiedniej tekstury w projekcie, należy upewnić się, że został wybrany odpowiedni `Sprite Mode`. Wartość tą można ustawić w inspektorze po kliknięciu na odpowiedni plik w projekcie. Należy ustawić go na `Multiple`.
 
-![zmiana 'sprite mode'](./media/open-sprite-editor.webm)
+![zmiana 'sprite mode'](./media/open-sprite-editor.mp4)
 
 Jeśli tekstura nie została odpowiednio podzielona automatycznie, można zrobić to ręcznie. Wystarczy kliknąć, i rozciągnąć prostokąt na zamierzony fragment obrazu.
 
-![wycinanie sprite'ów](./media/sprite-atlas-manual-slicing.webm)
+![wycinanie sprite'ów](./media/sprite-atlas-manual-slicing.mp4)
 
 Istnieje również możliwość automatycznego podzielenia sprite'ów, przydatna zwłaszcza, jeśli poszczególne elementy leżą na jednorodnej siatce, tak jak w tym przypadku. W tym celu należy rozwinąć opcję `slice` u góry okienka, i ustawić parametry w zależności od potrzeby.
 
-![automatyczne wycięcie sprite'ów](./media/sprite-atlas-auto-slicing.webm)
+![automatyczne wycięcie sprite'ów](./media/sprite-atlas-auto-slicing.mp4)
 
 Po wszystkim, należy zastosować swoje zmiany.
 
-![potwierdzenie operacji](./media/sprite-editor-confirm.webm)
+![potwierdzenie operacji](./media/sprite-editor-confirm.mp4)
 
 W strukturze folderu, powinno dać się "rozwinąć" teksturę, po czym widoczny powinien być zbiór sprite'ów wycięty z niej.
 
@@ -103,17 +103,17 @@ Animacje mogą być sterowane przez skrypty w C# za pomocą Animator API, co poz
 
 Za pomocą okna `Animation` (`Window -> Animation -> Animation`), można tworzyć animacje oparte o keyframe'y. Poniżej nagranie video, przedstawiające jak za pomocą trybu 'nagrywania', można szybko zapisać stany pośrednie obiektu, oraz modyfikować animacje, przestawiając krzywe.
 
-![animowanie](./media/animating-real-values.webm)
+![animowanie](./media/animating-real-values.mp4)
 
 W przypadku animacji opartej o sprite'y, wartością modyfikowaną przez aplikację będzie właściwość `Sprite` na komponencie `Sprite Renderer`.
 
 Można szybko utworzyć animację, poprzez przeciągnięcie jednocześnie zaznaczonych sprite'ów na odpowiedni obiekt, tak, jak zaprezentowano na video poniżej.
 
-![animowanie automatycznie](./media/animating-sprites-drag-and-drop.webm)
+![animowanie automatycznie](./media/animating-sprites-drag-and-drop.mp4)
 
 W razie potrzeby, tego typu animację można również utworzyć ręcznie.
 
-![animowanie ręcznie](./media/animating-sprites-manually.webm)
+![animowanie ręcznie](./media/animating-sprites-manually.mp4)
 
 Utworzona i zapisana animacja zostaje zasobem w strukturze projektu. Należy zwrócić uwagę na właściwości tego zasobu, po kliknięciu w widoku projektu:
 
@@ -149,7 +149,7 @@ W poniższym video kolejno:
 3. Dodano dwie animacje do maszyny stanów
 4. Dodano między nimi przejścia, uwarunkowane wartością parametru 'run'
 
-![alt text](./media/state-machine-setup.webm)
+![alt text](./media/state-machine-setup.mp4)
 
 ```c#
 using UnityEngine;
@@ -183,7 +183,7 @@ Alternatywą dla systemu animacji jest ich programowanie. Może być to sensowni
 
 Poniższy kod jest przykładem takiej animacji. W tym przypadku, należy umieścić jeden obiekt w hierarchii wewnątrz drugiego. Dzięki temu kod, ustawiając właściwości `localPosition` oraz `localRotation`, ustawia te wartości względem rodzica w hierarchii, zamiast globalnego układu odniesienia. Dzięki temu, zmieniając pozycję rodzica, animowany obiekt również będzie zmieniał swoją pozycję.
 
-![hierarchia obiektów](./media/code-animation.webm)
+![hierarchia obiektów](./media/code-animation.mp4)
 
 ![hierarchia obiektów](./media/code-animation-hierarchy.png)
 
@@ -217,7 +217,7 @@ Aby uniknąć działania fizycznych sił na obiekt, należy ustawić właściwo�
 
 Warto również zwrócić uwagę na tzw. 'warstwy' ([dokumentacja](https://docs.unity3d.com/Manual/LayerBasedCollision.html)). Po ich odpowiednim ustawieniu, można ograniczyć wykrywanie kolizji, oraz wejść i wyjść triggerów, aby tylko określone obiekty mogły aktywować dalszą logikę. Innym sposobem na to jest wykorzystanie tagów, i sprawdzanie jego wartości na innym obiekcie, lub szukanie określonego komponentu na obiekcie, z którym wykryta została interacja. 
 
-![video podglądowe](./media/trigger-video.webm)
+![video podglądowe](./media/trigger-video.mp4)
 
 konfiguracja triggera:
 ![konfiguracja triggera](./media/trigger-config.png)
