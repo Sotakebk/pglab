@@ -139,9 +139,9 @@ W tym momencie można zobaczyć cztery elementy:
   - Exit - pozwala na wyjście z maszyny stanów, potencjalnie przydatne, gdy kilka maszyn stanów jest w sobie zagnieżdżone
   - 'Nasza Animacja' ręcznie dodany element, reprezentujący stan odtwarzający wcześniej przygotowaną animację
 
-Typowo, jak dla drzewa stanu, przejścia zachodzą jedynie, gdy ich warunki zostają spełnione. Oznacza do, że nie dochodzi do żadnych zmian, jeśli nie ma przejść "wyjściowych" ze stanu, lub gdy element 'Any State' nie ma żadnych przejść. Warto zwrócić na to uwagę.
+Typowo, jak dla maszyny stanowej, przejścia zachodzą jedynie, gdy ich warunki zostają spełnione. Oznacza do, że nie dochodzi do żadnych zmian, jeśli nie ma przejść "wyjściowych" ze stanu, lub gdy element 'Any State' nie ma żadnych przejść. Warto zwrócić na to uwagę.
 
-Drzewo stanów można rozbudować, aby postać mogła wykonywać dwie różne animacje, w zależności od stanu.
+Maszynę stanów można rozbudować, aby postać mogła wykonywać dwie różne animacje, w zależności od stanu.
 
 W poniższym video kolejno:
 1. Podpięto komponent `Animator` do skryptu, który ma sterować animacją (kod źródłowy poniżej)
