@@ -2,7 +2,7 @@
 
 Temat: Animacje w Unity
 
-Cel: Poznanie technik wykonywania animacji w grach 2D oraz triggery
+Cel: Poznanie technik tworzenia animacji w grach 2D oraz triggery
 
 Tabela zawartości
 ---
@@ -141,7 +141,7 @@ W tym momencie można zobaczyć cztery elementy:
 
 Typowo, jak dla maszyny stanowej, przejścia zachodzą jedynie, gdy ich warunki zostają spełnione. Oznacza do, że nie zachodzą zmiany, jeśli nie ma przejść "wyjściowych" ze stanu, lub gdy element 'Any State' nie ma żadnych przejść. Warto zwrócić na to uwagę.
 
-Maszynę stanów można rozbudować, aby postać mogła wykonywać dwie różne animacje, w zależności od stanu.
+Maszynę stanów można rozbudować, aby postać mogła wykonywać dwie różne animacje.
 
 W poniższym video kolejno:
 1. Podpięto komponent `Animator` do skryptu, który ma sterować animacją (kod źródłowy poniżej)
