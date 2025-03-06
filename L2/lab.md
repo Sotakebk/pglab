@@ -266,4 +266,5 @@ public class TriggerScript : MonoBehaviour
     {
         Debug.Log("OnTriggerStay2D " + other.name);
     }
-}```
+}
+```
