@@ -19,7 +19,7 @@ Tabela zawartości
 
 ## W ramach zajęć
 
-Należy zapoznć się z treścią konspektu, a następnie przystąpić do wykonywania zadań. \
+Należy zapoznać się z treścią konspektu, a następnie przystąpić do wykonywania zadań. \
 Na koniec zajęć proszę o wypełnienie [ankiety](https://docs.google.com/forms/d/e/1FAIpQLSenLGX8JVObhISm4gXoly_Q_2hqAH5OkoDweszK-Uf6Nq_RDg/viewform?usp=dialog) `:)`
 
 <details>
@@ -46,7 +46,7 @@ zadanie na 4, i dodatkowo:
 
 - dodać do sceny obiekty zbieralne, które będą nam dodawać i odbierać punkty
   - dodać obiekty, które będą dodawać różne ilości punktów, np. 1 i 2
-  - dodać obiekty, które będą odbieraćc losową ilość punktów, np. z zakresu 1 do 3
+  - dodać obiekty, które będą odbierać losową ilość punktów, np. z zakresu 1 do 3
   - obiekty powinny znikać ze sceny po zebraniu
   - ilość punktów po zmianie powinna pojawiać się w konsoli
   - obiekty zbieralne powinny mieć dowolną animację, np. kręcenie się, unoszenie
@@ -139,7 +139,7 @@ W tym momencie można zobaczyć cztery elementy:
   - Exit - pozwala na wyjście z maszyny stanów, potencjalnie przydatne, gdy kilka maszyn stanów jest w sobie zagnieżdżone
   - 'Nasza Animacja' ręcznie dodany element, reprezentujący stan odtwarzający wcześniej przygotowaną animację
 
-Typowo, jak dla maszyny stanowej, przejścia zachodzą jedynie, gdy ich warunki zostają spełnione. Oznacza do, że nie dochodzi do żadnych zmian, jeśli nie ma przejść "wyjściowych" ze stanu, lub gdy element 'Any State' nie ma żadnych przejść. Warto zwrócić na to uwagę.
+Typowo, jak dla maszyny stanowej, przejścia zachodzą jedynie, gdy ich warunki zostają spełnione. Oznacza do, że nie zachodzą zmiany, jeśli nie ma przejść "wyjściowych" ze stanu, lub gdy element 'Any State' nie ma żadnych przejść. Warto zwrócić na to uwagę.
 
 Maszynę stanów można rozbudować, aby postać mogła wykonywać dwie różne animacje, w zależności od stanu.
 
@@ -173,7 +173,7 @@ public class AnimationScript : MonoBehaviour
 }
 ```
 
-Dodatkowo: we właściwościach przejścia istnieje `HasExitTime`. Jeśli opcja ta jest zaznaczona, animacja aktualnego stanu zostanie odtworzona w całości, przed wykonaniem przejścia. W przypadku animacji postaci gracza może wyglądać to jak błąd lub niepotrzebne opóźnienie, dlatego warto jest ją wyłączyć.
+⚠️ Dodatkowo: we właściwościach przejścia istnieje `HasExitTime`. Jeśli opcja ta jest zaznaczona, animacja aktualnego stanu zostanie odtworzona w całości, przed wykonaniem przejścia. W przypadku animacji postaci gracza może wyglądać to jak błąd lub niepotrzebne opóźnienie, dlatego warto jest ją wyłączyć.
 
 ![właściwości przejścia](./media/transition-properties.png)
 
@@ -212,12 +212,19 @@ Triggery to specjalny tryb działania koliderów (Colliders), które wykrywają 
 
 Każdy kolider (np. `BoxCollider`, `SphereCollider`) ma właściwość `Is Trigger` – po jej zaznaczeniu collider przestaje wchodzić w fizyczne interakcje z innymi obiektami, ale nadal wykrywa ich obecność.
 
-**Uwaga: Aby poniższe metody mogły być wywołane, przynajmniej jeden z obiektów z koliderami musi również mieć komponent `Rigidbody2D`! \
-Aby uniknąć działania fizycznych sił na obiekt, należy ustawić właściwość `Kinematic` na `true`.**
+Przykłady użycia triggerów:
 
-Warto również zwrócić uwagę na tzw. 'warstwy' ([dokumentacja](https://docs.unity3d.com/Manual/LayerBasedCollision.html)). Po ich odpowiednim ustawieniu, można ograniczyć wykrywanie kolizji, oraz wejść i wyjść triggerów, aby tylko określone obiekty mogły aktywować dalszą logikę. Innym sposobem na to jest wykorzystanie tagów, i sprawdzanie jego wartości na innym obiekcie, lub szukanie określonego komponentu na obiekcie, z którym wykryta została interacja. 
+  - strefy wykrywania (np. AI wykrywa gracza, aktywacja pułapki)
+  - obszary zbierania przedmiotów (np. gracz wchodzi w trigger i podnosi przedmiot)
+  - przejścia między poziomami (np. wejście do nowego obszaru)
+  - mechaniki interaktywne (np. otwieranie drzwi, gdy gracz podejdzie blisko)
+
+Warto również zwrócić uwagę na tzw. 'warstwy' ([dokumentacja](https://docs.unity3d.com/Manual/LayerBasedCollision.html)). Po ich odpowiednim ustawieniu, można ograniczyć wykrywanie kolizji, oraz wejść i wyjść triggerów, aby tylko określone obiekty mogły aktywować dalszą logikę. Innym sposobem na to jest sprawdzanie przypiętego tagu na kolidującym obiekcie, lub szukanie określonego komponentu na obiekcie, z którym wykryta została interacja. 
 
 https://github.com/user-attachments/assets/74734a8f-3dc3-4401-b29d-21e17cbe53af
+
+**⚠️ Uwaga: Aby poniższe metody mogły być wywołane, przynajmniej jeden z obiektów z koliderami musi również mieć komponent `Rigidbody2D`! \
+Aby uniknąć działania fizycznych sił na obiekt, należy ustawić właściwość `Kinematic` na `true`.**
 
 konfiguracja triggera:
 
@@ -228,6 +235,7 @@ konfiguracja kolidera:
 ![konfiguracja kolidera](./media/collider-config.png)
 
 kod:
+
 ```c#
 using UnityEngine;
 
