@@ -123,19 +123,19 @@ Elementy interfejsu mają komponent `Rect Transform` zamiast `Transform`, z doda
 
 Przycisk w lewym górnym rogu inspektora pozwala na szybsze układanie elementów względem rodzica w hierarchii. Sposób, w jaki to działa, przedstawiono na filmiku poniżej.
 
-TODO FILMIK
+https://github.com/user-attachments/assets/353f573a-06f5-48dd-bf50-21d172d7c0bf
 
 `Pivot` określa punkt, względem którego określone są transformacje. Modyfikując odpowiednio `Anchor points` można zmienić względem jakich punktów ustalana jest pozycja i skalowanie.
 
 Korzystając z komponentów `Content Size Fitter` oraz `* Layout Group` można uzyskać automatyczne układanie się elementów wewnątrz innych elementów UI, co przedstawiono na filmiku poniżej.
 
-TODO FILMIK
+https://github.com/user-attachments/assets/e5a5d25e-9dc2-4f8d-9f40-8176f929782e
 
 #### Elementy interaktywne
 
 Elementy które można przesuwać, edytować, lub klikać i aktywować, mogą mieć możliwość wykonywania akcji. Pozwala to na ustawianie **właściwości**, lub wykonywanie metod. Poniższe nagranie pokazuje jak ustawić przycisk, by wykonywał odpowiednią metodę:
 
-TODO FILMIK
+https://github.com/user-attachments/assets/1ca54d5c-fcca-4c34-8e90-67b228c82533
 
 ```csharp
 using UnityEngine;
