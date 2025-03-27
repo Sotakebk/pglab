@@ -127,7 +127,7 @@ Jak można zauważyć, obiekt, na którym została dodana animacja, został auto
 
 ![komponent animator](./media/animator.png)
 
-Klikając dwukrotnie na wartość właściwości `Controller` tego componentu, lub otwierając poprzez menu (`Window -> Animation -> Animator`), można otworzyć okno edytora, pozwalające na edycję obiektu typu `Animator Controller`.
+Klikając dwukrotnie na wartość właściwości `Controller` tego komponentu, lub otwierając poprzez menu (`Window -> Animation -> Animator`), można otworzyć okno edytora, pozwalające na edycję obiektu typu `Animator Controller`.
 ![animator edytor](./media/animator-editor.png)
 
 Okno prezentuje maszynę stanową, w której stany mogą odpowiadać animacjom, a między nimi prowadzą przejścia, które następują w zależności od spełnionych warunków.
