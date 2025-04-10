@@ -99,6 +99,6 @@ Interfejs pozwala również na wiele więcej operacji, wiele z nich nie jest dos
 
 ### Znane problemy
 
-W razie wystąpienia poniższego błędu, zwykłe zamknięcie i ponowne otwarcie projektu może pomóc. W innym przypadku, informacje dostępne w internecie mogą pomóc.
+W razie wystąpienia poniższego błędu, zwykłe zamknięcie i ponowne otwarcie edytora może pomóc.
 
 ![nietypowy błąd](./media/error.png)
