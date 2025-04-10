@@ -126,7 +126,7 @@ Istnieje możliwość otwarcia dodatkowego okienka edytora efektów cząsteczkow
 
 Część ustawień to modyfikowalne krzywe. Jeśli po kliknięciu dwukrotnie na wartość odpowiedni widok edycji nie zostaje otwarty, musi zostać otwarty poprzez podniesienie dolnej belki inspektora.
 
-<!-- tutaj video -->
+https://github.com/user-attachments/assets/4e169d39-d77f-41c9-b670-7fc209232270
 
 Skryptowanie ustawień jest dość nietypowe, i może wydawać się dziwne z perspektywy programowania w języku `C#`. Dostępny jest [wpis na blogu](https://docs.unity3d.com/2019.3/Documentation/uploads/ExpertGuides/Particle_System_Modules.pdf) na ten temat.
 
