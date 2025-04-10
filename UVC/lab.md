@@ -24,6 +24,8 @@ Używanie Unity Version Control jest bardzo podobne do Git, z podobnymi nazwami 
 
 Należy mieć na uwadze, że on-prem, tzn. własne hostowanie serwera hostującego kod źródłowy, wymaga zakupu odpowiedniej wersji na specjalnej licencji. Kolejnym ograniczeniem jest limit przestrzeni dyskowej przeznaczonej na pliki projektu, który wynosi 10 GB dla całej 'organizacji'.
 
+Interfejs edytora jest dość nieprzystępny na moment pisania tego konspektu. [Dedykowany klient](https://docs.unity.com/ugs/en-us/manual/devops/manual/version-control-desktop-client) jest znacznie wygodniejszy, przystępniejszy, oraz pozwala na wykonywanie wielu operacji które są niedostępne, lub trudne do odnalezienia w interfejsie edytora.
+
 ### Włączenie
 
 Włączenie UVC wymaga integracji z usługami chmurowymi. Nowo tworzony projekt można odpowiednio ustawić tak, aby został automatycznie powiązany z odpowiednim zasobem chmurowym, lub istniejący już projekt może zostać zarejestrowany.
@@ -90,7 +92,7 @@ Unity ma również [dedykowane narzędzie dla obsługi systemu wersjonowania](ht
 
 ![alt text](./media/udvvc-merge.png)
 
-Interfejs pozwala również na wiele więcej operacji, wiele z nich nie jest dostępne w interfejsie edytor.
+Interfejs pozwala również na wiele więcej operacji, wiele z nich nie jest dostępne w interfejsie edytora. Wszystko, co można zrobić w edytorze, działa analogicznie w tym interfejsie.
 
 ![alt text](./media/udvvc-options.png)
 
