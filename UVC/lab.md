@@ -80,7 +80,7 @@ Po wykonaniu swoich zmian, gałąź można scalić `merge` do 'głównej' gałę
 
 ![merge from this branch](./media/merge-from-this-branch.png)
 
-W przypadku konfliktów, czyli różnych zmian w tych samych plikach, scalanie wymaga ręcznego zmodyfikowania kodu i zaakceptowania wynikających zmina.
+W przypadku konfliktów, czyli różnych zmian w tych samych plikach, scalanie wymaga ręcznego zmodyfikowania kodu i zaakceptowania wynikających zmian.
 
 ![konflikty](./media/conflicts.png)
 
