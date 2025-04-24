@@ -2,7 +2,7 @@
 
 Temat: Projekty 3D
 
-Cel: Poznanie komponentu systemu cząsteczek; pisanie współprogramów
+Cel: Utworzenie projektu w przestrzeni trójwymiarowej; poznanie komponentów Terrain oraz post-processing
 
 Tabela zawartości
 ---
