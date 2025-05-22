@@ -35,12 +35,16 @@ Należy zapoznać się z treścią konspektu, a następnie przystąpić do wykon
 <details>
 <summary>Na ocenę 4</summary>
 
+zadanie na 3, i dodatkowo:
+
 - korzystając z post-processingu, dodać efekt 'bloom'
 
 </details>
 
 <details>
 <summary>Na ocenę 5</summary>
+
+zadanie na 4, i dodatkowo:
 
 - dodać na scenę postać gracza
   - postać może się poruszać

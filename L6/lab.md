@@ -29,6 +29,8 @@ Należy zapoznać się z treścią konspektu, a następnie przystąpić do wykon
 <details>
 <summary>Na ocenę 4</summary>
 
+zadanie na 3, i dodatkowo:
+
 - dodać obiekt przeciwnika/cel, który może zostać "zastrzelony", po czym zniknie
 - po naciśnięciu przycisku myszki ma być wysyłany raycast; jeśli trafi w cel, zostaje uznany za trafiony
 
@@ -36,6 +38,8 @@ Należy zapoznać się z treścią konspektu, a następnie przystąpić do wykon
 
 <details>
 <summary>Na ocenę 5</summary>
+
+zadanie na 4, i dodatkowo:
 
 - dodać punkty, w których będą pojawiać się przeciwnicy
   - przeciwnicy poruszają się w stronę gracza
